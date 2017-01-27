@@ -1,0 +1,8 @@
+version: "2"
+services:
+  pycv:
+    image: andrewdemchenko/python-opencv
+    volumes:
+        - .:/code
+    working_dir: /code
+    command: /bin/bash -c "python main.py -v input.mp4"
